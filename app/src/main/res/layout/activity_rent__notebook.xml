@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="18dp"
+    android:paddingRight="18dp"
+    android:background="#ffffff"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Rent_Notebook">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:padding="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/ic_laptop_black_24dp"/> <!-- Icon -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:layout_marginTop="15dp"
+            android:textColor="#000000"
+            android:textAlignment="center"
+            android:text="บริการเช่า-คืน NOTEBOOK"/> <!-- Name -->
+
+        </LinearLayout> <!-- Icon/Name -->
+
+        <LinearLayout
+            android:background="@drawable/blackrent"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="180dp">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                <EditText
+
+                android:id="@+id/no_from"
+                android:layout_width="225dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@android:color/transparent"
+                android:drawableLeft="@drawable/ic_doc"
+                android:ems="10"
+                android:hint="ระบุเลขเครื่อง เช่น 001"
+                android:inputType="text"
+                android:maxLines="1"
+                android:padding="12dp"
+                android:textColorHint="#F5F5F5" /> <!-- Input text-->
+                <View
+                    android:layout_width="225dp"
+                    android:layout_height="1dp"
+                    android:background="#f9d7db"
+                    android:layout_marginLeft="10dp"/>  <!-- Input view -->
+                </LinearLayout>
+
+            <Button
+            android:id="@+id/bt_search"
+            style="@style/Base.TextAppearance.AppCompat.Body1"
+            android:layout_width="80dp"
+            android:layout_marginLeft="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/backlogin"
+            android:contextClickable="true"
+            android:onClick="getReposClicked"
+            android:padding="16dp"
+            android:text="ค้นหา"
+            android:textAllCaps="false"
+            android:textColor="#48CFAD"
+            android:textSize="15dp" /> <!-- Search -->
+            </LinearLayout>
+
+        <TextView
+            android:id="@+id/show_from"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="วันกำหนดส่งคืน : "
+            android:textSize="20dp"
+            android:textColor="#ffffff"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:background="@color/colorPrimaryDark"/> <!-- Date -->
+        <TextView
+            android:id="@+id/show_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ก่อนเวลา : "
+            android:textSize="20dp"
+            android:textColor="#ffffff"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="15dp"
+            android:background="@color/colorBitterSweetDark"/> <!-- Time -->
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/bt_admin"
+            style="@style/Base.TextAppearance.AppCompat.Body1"
+            android:layout_width="150dp"
+            android:layout_marginLeft="170dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/backlogin"
+            android:clickable="true"
+            android:padding="16dp"
+            android:text="ADMIN"
+            android:textColor="#48CFAD"
+            android:textSize="15dp" /> <!-- Admin -->
+
+    </LinearLayout>
+
+</LinearLayout>

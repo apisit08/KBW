@@ -9,8 +9,8 @@
     android:paddingLeft="18dp"
     android:paddingRight="18dp"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:background="#FF6600"
-    tools:context=".LoginITActivity">
+    android:background="#4A89DC"
+    tools:context=".Login_Rent">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -26,7 +26,7 @@
                 android:padding="16dp"
                 android:layout_marginTop="48dp"
                 android:layout_marginBottom="20dp"
-                android:src="@drawable/ic_desktop_windows_black_24dp"/>
+                android:src="@drawable/ic_laptopblack"/>
 
             <EditText
                 android:id="@+id/user"
@@ -75,7 +75,7 @@
                 android:padding="16dp"
                 android:text="Login"
                 android:textAllCaps="false"
-                android:textColor="#FF6600" />
+                android:textColor="#509CEC" />
             <Button
                 android:id="@+id/btset"
                 style="@style/Base.TextAppearance.AppCompat.Body1"
@@ -87,7 +87,7 @@
                 android:padding="16dp"
                 android:text="Reset"
                 android:textAllCaps="false"
-                android:textColor="#FF6600" />
+                android:textColor="#509CEC" />
 
 
         </LinearLayout>

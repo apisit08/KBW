@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="18dp"
+    android:paddingRight="18dp"
+    android:background="#ffffff"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".IT_Service">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:padding="16dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="20dp"
+                android:src="@drawable/ic_desktop"/> <!-- Icon -->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:layout_marginTop="55dp"
+                android:textColor="#000000"
+                android:textAlignment="center"
+                android:text="บริการ IT Service"/> <!-- Name -->
+
+        </LinearLayout> <!-- Icon/Name -->
+
+
+        <LinearLayout
+            android:background="@drawable/blackrent"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="225dp">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/no_from"
+            android:layout_width="225dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/ic_doc"
+            android:ems="10"
+            android:hint=" 0001/61"
+            android:inputType="text"
+            android:maxLines="1"
+            android:padding="12dp"
+            android:textColorHint="#ffffff" /> <!-- Input text-->
+        <View
+            android:layout_width="225dp"
+            android:layout_height="1dp"
+            android:layout_marginLeft="10dp"
+            android:background="#f9d7db"/> <!-- View text-->
+                </LinearLayout>
+
+
+        <Button
+            android:id="@+id/bt_search"
+            style="@style/Base.TextAppearance.AppCompat.Body1"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="4dp"
+            android:background="@drawable/backlogin"
+            android:contextClickable="true"
+            android:padding="16dp"
+            android:text="ค้นหา"
+            android:textAllCaps="false"
+            android:textSize="15dp"
+            android:onClick="getReposClicked"
+            android:textColor="#48CFAD" /> <!-- Search -->
+            </LinearLayout>
+        <TextView
+            android:id="@+id/show_from"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="เลขฟอร์ม       : "
+            android:textSize="20dp"
+            android:textColor="#ffffff"
+            android:layout_marginTop="30dp"
+            android:background="@color/colorPrimaryDark"/> <!-- From-->
+
+        <TextView
+            android:id="@+id/show_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="สถานะบริการ : "
+            android:textSize="20dp"
+            android:textColor="#ffffff"
+            android:layout_marginTop="30dp"
+            android:background="@color/colorPrimaryDark"/> <!-- Status-->
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

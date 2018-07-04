@@ -1,6 +1,8 @@
 package th.ac.psu.kbwsite.kbw;
 
 import android.app.Fragment;
+import android.content.Intent;
+import android.os.Handler;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v4.app.FragmentTransaction;
@@ -18,46 +20,23 @@ public class MainActivity extends AppCompatActivity {
     private HomeFragment homeFragment;
     private StudentFragment studentFragment;
 
+    private static int splash_time_out = 4000;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        mMainFrame = (FrameLayout) findViewById(R.id.main_frame);
-        mMainNav = (BottomNavigationView) findViewById(R.id.main_nav);
 
-        homeFragment = new HomeFragment();
-        studentFragment = new StudentFragment();
-
-        setFragment(homeFragment);
-
-        mMainNav.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+        new Handler().postDelayed(new Runnable(){
             @Override
-            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                switch (item.getItemId()) {
-                    case R.id.nav_home:
-                        mMainNav.setItemBackgroundResource(R.color.colorPrimary);
-                        setFragment (homeFragment);
-                        return true;
-
-                    case R.id.nav_student:
-                        mMainNav.setItemBackgroundResource(R.color.colorAccent);
-                        setFragment(studentFragment);
-                        return true;
-
-                    default:
-                        return false;
-                }
-
+            public void run(){
+                Intent homeIntent = new Intent(MainActivity.this,SplashScreen.class);
+                startActivity(homeIntent);
+                finish();
             }
-        });
-    }
-
-    private void setFragment(android.support.v4.app.Fragment fragment) {
-        FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
-        fragmentTransaction.replace(R.id.main_frame , fragment);
-        fragmentTransaction.commit();
+        },splash_time_out);
     }
 }
 

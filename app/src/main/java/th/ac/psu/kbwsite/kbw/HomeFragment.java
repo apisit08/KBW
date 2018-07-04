@@ -14,7 +14,7 @@ import android.view.ViewGroup;
  */
 public class HomeFragment extends Fragment implements View.OnClickListener{
 
-    private CardView IT,Exam,Doc,Eval,Train,Rent;
+    private CardView IT,Exam,Doc,Eval,Train,Rent,RentLot,Booking,Copt;
 
 
     public HomeFragment() {
@@ -35,6 +35,9 @@ public class HomeFragment extends Fragment implements View.OnClickListener{
         Eval = (CardView) view.findViewById(R.id.eval_card);
         Train = (CardView) view.findViewById(R.id.train_card);
         Rent = (CardView) view.findViewById(R.id.rent_card);
+        RentLot = (CardView)view.findViewById(R.id.nlot_card);
+        Booking = (CardView)view.findViewById(R.id.booking_card);
+        Copt = (CardView)view.findViewById(R.id.copt_card);
         // add click listener
         IT.setOnClickListener(this);
         Exam.setOnClickListener(this);
@@ -42,6 +45,9 @@ public class HomeFragment extends Fragment implements View.OnClickListener{
         Eval.setOnClickListener(this);
         Train.setOnClickListener(this);
         Rent.setOnClickListener(this);
+        RentLot.setOnClickListener(this);
+        Booking.setOnClickListener(this);
+        Copt.setOnClickListener(this);
         return view;
     }
 
@@ -54,8 +60,12 @@ public class HomeFragment extends Fragment implements View.OnClickListener{
             case R.id.it_card : i = new Intent(HomeFragment.this.getActivity(),LoginITActivity.class);startActivity(i); break;
             case R.id.exam_card : i = new Intent(HomeFragment.this.getActivity(),Coming.class);startActivity(i); break;
             case R.id.doc_card : i = new Intent(HomeFragment.this.getActivity(),Coming.class);startActivity(i); break;
-            case R.id.rent_card : i = new Intent(HomeFragment.this.getActivity(),Coming.class);startActivity(i); break;
+            case R.id.rent_card : i = new Intent(HomeFragment.this.getActivity(),Rent_Notebook.class);startActivity(i); break;
             case R.id.train_card : i = new Intent(HomeFragment.this.getActivity(),Coming.class);startActivity(i); break;
+            case R.id.eval_card : i = new Intent(HomeFragment.this.getActivity(),Login_Eval.class);startActivity(i); break;
+            case R.id.copt_card : i = new Intent(HomeFragment.this.getActivity(),Control_Main.class);startActivity(i); break;
+            case R.id.booking_card : i = new Intent(HomeFragment.this.getActivity(),Coming.class);startActivity(i); break;
+            case R.id.nlot_card : i = new Intent(HomeFragment.this.getActivity(),Coming.class);startActivity(i); break;
 
         }
     }
