@@ -65,19 +65,14 @@ public class IT_Service extends AppCompatActivity {
             case "99":  strRow2 = "\t"+ "ยังไม่ระบุ"; break;
             default: strRow2 = "\t"+ "ยังไม่ระบุ"; break;
         }
-        /*if(status == "0" || status == "1" || status == "2"){
-            strRow2 = "\t"+ "กำลังดำเนินการซ่อม";
-        }else if(status == "3" || status == "4"){
-            strRow2 = "\t"+ "งานเสร็จ";
-        }else if(status == "5" || status == "6"){
-            strRow2 = "\t"+ "รับคืนแล้ว";
-        }else if(status == "7"){
-            strRow2 = "\t"+ "รออะไหล่";
-        }else {strRow2 = "\t"+ "ยังไม่ระบุ";}*/
-
-        //String currentText = tvRepoList.getText().toString();
-        this.tvDetail.setText("เลขฟอร์ม       : " + "\t" + strRow);
-        this.tvStatus.setText("สถานะบริการ : " + "\t" + strRow2);
+        if(strRow.equals("No from found.")) {
+            this.tvDetail.setText("ไม่มีข้อมูล");
+            this.tvStatus.setText("ไม่มีข้อมูล");
+        }
+        else {
+            this.tvDetail.setText("เลขฟอร์ม       : " + "\t" + strRow);
+            this.tvStatus.setText("สถานะบริการ : " + "\t" + strRow2);
+        }
     }
 
     private void setRepoListText(String str) {

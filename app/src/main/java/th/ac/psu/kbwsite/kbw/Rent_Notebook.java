@@ -75,10 +75,14 @@ public class Rent_Notebook extends AppCompatActivity {
         String date = arr[0];
         String time = arr[1];
 
+        if(date.equals("No from found.")){
+            this.tvDetail.setText("ไม่มีข้อมูล");
+            this.tvTime.setText("ไม่มีข้อมูล");
+        }else {
+            this.tvDetail.setText("วันกำหนดส่งคืน : "+ "\t" + dateThai(date));
+            this.tvTime.setText("ก่อนเวลา : "+ "\t"+ time + "\t" + "น.");
+        }
         //String currentText = tvRepoList.getText().toString();
-        this.tvDetail.setText("วันกำหนดส่งคืน : "+ "\t" + dateThai(date));
-        this.tvTime.setText("ก่อนเวลา : "+ "\t"+ time + "\t" + "น.");
-
     }
 
     private void setRepoListText(String str) {
