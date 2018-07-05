@@ -37,17 +37,49 @@ public class Show_All extends AppCompatActivity {
             //Toast.makeText(this, "Name : " + result, Toast.LENGTH_SHORT).show();
             String result = "";
 
-            TextView textData = (TextView)findViewById(R.id.tdata);
+            TextView textData1 = (TextView)findViewById(R.id.data1);
+            TextView textData2 = (TextView)findViewById(R.id.data2);
+            TextView textData3 = (TextView)findViewById(R.id.data3);
+            TextView textData4 = (TextView)findViewById(R.id.data4);
+            TextView textData5 = (TextView)findViewById(R.id.data5);
+            TextView textData6 = (TextView)findViewById(R.id.data6);
+            TextView textData7 = (TextView)findViewById(R.id.data7);
 
             String[] arr = obj.split(",");
+
+            String r1 = "",r2="",r3="",r4="",r5="",r6="",r7="";
             for(int i=0; i<arr.length;i++){
-                if(i==0){
-                    result += arr[i];
-                }else{
-                    result += "\n"+arr[i];
+                switch (i) {
+                    case 1: // name
+                        String[] arr3 = arr[i].split("=");
+                        r3 = arr3[1]; break;
+                    case 2: // name test
+                        String[] arr4 = arr[i].split("=");
+                        r4 = arr4[1]; break;
+                    case 6: // round
+                        String[] arr2 = arr[i].split("=");
+                        r2 = arr2[1]; break;
+                    case 7: // enter score
+                        String[] arr7 = arr[i].split("=");
+                        r7 = arr7[1]; break; //
+                    case 8: // date enter
+                        String[] arr1 = arr[i].split("=");
+                        r1 = arr1[1]; break;
+                    case 9: // score
+                        String[] arr6 = arr[i].split("=");
+                        r6 = arr6[1]; break; //
+                    case 11: // result
+                        String[] arr5 = arr[i].split("=");
+                        r5 = arr5[1]; break;
                 }
             }
-            textData.setText(result);
+            textData1.setText(r1);
+            textData2.setText(r2);
+            textData3.setText(r3);
+            textData4.setText(r4);
+            textData5.setText(r5);
+            textData6.setText(r6);
+            textData7.setText(r7);
 
         }
 

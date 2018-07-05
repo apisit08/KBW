@@ -27,12 +27,16 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 public class Control_Main extends AppCompatActivity implements AdapterView.OnItemClickListener{
-    public static final String URL = "http://psu-copt.psu.ac.th/practical/scores_json/sitthinai.w";
+    public static String bURL = "http://psu-copt.psu.ac.th/practical/scores_json/";
+    static String URL;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_control__main);
+        Bundle bundle = getIntent().getExtras();
+        String obj = bundle.getString("user");
+        URL = bURL + obj;
         new SimpleTask().execute(URL);
     }
 

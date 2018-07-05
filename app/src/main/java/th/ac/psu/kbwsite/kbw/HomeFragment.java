@@ -63,7 +63,7 @@ public class HomeFragment extends Fragment implements View.OnClickListener{
             case R.id.rent_card : i = new Intent(HomeFragment.this.getActivity(),Rent_Notebook.class);startActivity(i); break;
             case R.id.train_card : i = new Intent(HomeFragment.this.getActivity(),Coming.class);startActivity(i); break;
             case R.id.eval_card : i = new Intent(HomeFragment.this.getActivity(),Login_Eval.class);startActivity(i); break;
-            case R.id.copt_card : i = new Intent(HomeFragment.this.getActivity(),Control_Main.class);startActivity(i); break;
+            case R.id.copt_card : i = new Intent(HomeFragment.this.getActivity(),Login_Copt.class);startActivity(i); break;
             case R.id.booking_card : i = new Intent(HomeFragment.this.getActivity(),Coming.class);startActivity(i); break;
             case R.id.nlot_card : i = new Intent(HomeFragment.this.getActivity(),Coming.class);startActivity(i); break;
 
