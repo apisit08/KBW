@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".Show_All_Menu">
+
+    <Button
+        android:layout_marginTop="220dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bt_old"
+        android:textSize="20dp"
+        android:text="PSU-CoPTEST (ระบบเก่า)"
+        android:background="@drawable/back_showdetail"/>
+    <Button
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bt_new"
+        android:textSize="20dp"
+        android:text="PSU-CoPTEST (ระบบใหม่)"
+        android:background="@drawable/back_showdetail"/>
+
+</LinearLayout>

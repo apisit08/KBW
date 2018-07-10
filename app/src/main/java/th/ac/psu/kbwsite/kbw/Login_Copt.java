@@ -118,7 +118,7 @@ public class Login_Copt extends AppCompatActivity {
                  message = c.getString("status_message");
             }
         if(status.equals("Y")){
-            Intent intent = new Intent(Login_Copt.this,Control_Main.class);
+            Intent intent = new Intent(Login_Copt.this,Show_All_Menu.class);
             intent.putExtra("user",session);
             startActivity(intent);
             finish();

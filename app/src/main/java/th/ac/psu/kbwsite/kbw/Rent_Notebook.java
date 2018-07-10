@@ -31,7 +31,7 @@ import java.util.Date;
 public class Rent_Notebook extends AppCompatActivity {
 
     EditText etGetfrom; // This will be a reference to our GitHub username input.
-    Button btnGetSearch,btadmin;  // This is a reference to the "Get Repos" button.
+    Button btnGetSearch,btadmin,btback;  // This is a reference to the "Get Repos" button.
     TextView tvDetail,tvTime;  // This will reference our repo list text box.
     RequestQueue requestQueue;  // This is our requests queue to process our HTTP requests.
 
@@ -44,10 +44,17 @@ public class Rent_Notebook extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_rent__notebook);
         btadmin = (Button)findViewById(R.id.bt_admin);
+        btback = findViewById(R.id.bt_back);
         this.etGetfrom = (EditText) findViewById(R.id.no_from);  // Link our github user text box.
         this.btnGetSearch = (Button) findViewById(R.id.bt_search);  // Link our clicky button.
         this.tvDetail = (TextView) findViewById(R.id.show_from);  // Link our repository list text output box.
         this.tvTime = (TextView)findViewById(R.id.show_time);
+        btback.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
         btadmin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -76,8 +83,8 @@ public class Rent_Notebook extends AppCompatActivity {
         String time = arr[1];
 
         if(date.equals("No from found.")){
-            this.tvDetail.setText("ไม่มีข้อมูล");
-            this.tvTime.setText("ไม่มีข้อมูล");
+            this.tvDetail.setText("วันกำหนดส่งคืน : "+ "\t" +"ไม่มีข้อมูล");
+            this.tvTime.setText("ก่อนเวลา : "+ "\t"+"ไม่มีข้อมูล");
         }else {
             this.tvDetail.setText("วันกำหนดส่งคืน : "+ "\t" + dateThai(date));
             this.tvTime.setText("ก่อนเวลา : "+ "\t"+ time + "\t" + "น.");
@@ -88,7 +95,9 @@ public class Rent_Notebook extends AppCompatActivity {
     private void setRepoListText(String str) {
         // This is used for setting the text of our repo list box to a specific string.
         // We will use this to write a "No repos found" message if the user doens't have any.
-        this.tvDetail.setText(str);
+        //this.tvDetail.setText(str);
+        this.tvDetail.setText("วันกำหนดส่งคืน : "+ "\t" +"ไม่มีข้อมูล");
+        this.tvTime.setText("ก่อนเวลา : "+ "\t"+"ไม่มีข้อมูล");
     }
     private void getRepoList(String username) {
         // First, we insert the username into the repo url.

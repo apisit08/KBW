@@ -22,7 +22,7 @@ import org.json.JSONException;
 
 public class IT_Service extends AppCompatActivity {
     EditText etGetfrom; // This will be a reference to our GitHub username input.
-    Button btnGetSearch;  // This is a reference to the "Get Repos" button.
+    Button btnGetSearch,btback;  // This is a reference to the "Get Repos" button.
     TextView tvDetail,tvStatus;  // This will reference our repo list text box.
     RequestQueue requestQueue;  // This is our requests queue to process our HTTP requests.
 
@@ -38,6 +38,13 @@ public class IT_Service extends AppCompatActivity {
         this.btnGetSearch = (Button) findViewById(R.id.bt_search);  // Link our clicky button.
         this.tvDetail = (TextView) findViewById(R.id.show_from);  // Link our repository list text output box.
         this.tvStatus = (TextView)findViewById(R.id.show_status);
+        btback = findViewById(R.id.bt_back);
+        btback.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
         this.tvDetail.setMovementMethod(new ScrollingMovementMethod());  // This makes our text box scrollable, for those big GitHub contributors with lots of repos :)
 
         requestQueue = Volley.newRequestQueue(this);  // This setups up a new request queue which we will need to make HTTP requests.
@@ -78,7 +85,9 @@ public class IT_Service extends AppCompatActivity {
     private void setRepoListText(String str) {
         // This is used for setting the text of our repo list box to a specific string.
         // We will use this to write a "No repos found" message if the user doens't have any.
-        this.tvDetail.setText(str);
+        //this.tvDetail.setText(str);
+        this.tvDetail.setText("เลขฟอร์ม       : " + "\t" +"ไม่มีข้อมูล");
+        this.tvStatus.setText("สถานะบริการ : " + "\t" +"ไม่มีข้อมูล");
     }
     private void getRepoList(String username) {
         // First, we insert the username into the repo url.

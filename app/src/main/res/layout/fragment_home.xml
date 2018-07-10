@@ -5,6 +5,7 @@
     android:layout_height="match_parent"
     android:layout_weight="100"
     android:orientation="vertical"
+    android:background="#FFF0F5"
     tools:context=".MainActivity">
 
     <RelativeLayout
@@ -17,9 +18,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
+            android:fontFamily="serif"
             android:text="KBW GROUP"
-            android:textColor="#FF5600"
-            android:textSize="34sp" />
+            android:textColor="#FF0000"
+            android:textSize="34sp"
+            android:textStyle="bold" />
 
     </RelativeLayout>
 
@@ -38,7 +41,6 @@
         <!--column 1-->
         <android.support.v7.widget.CardView
             android:id="@+id/it_card"
-            android:clickable="true"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_columnWeight="1"
@@ -46,6 +48,8 @@
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
             android:layout_rowWeight="1"
+            android:clickable="true"
+            app:cardBackgroundColor="#EE9999"
             app:cardCornerRadius="8dp"
             app:cardElevation="8dp">
 
@@ -67,7 +71,7 @@
                     android:layout_height="wrap_content"
                     android:text="ITS"
                     android:textAlignment="center"
-                    android:textColor="#ED5565"
+                    android:textColor="#363636"
                     android:textSize="18sp"
                     android:textStyle="bold" />
 
@@ -77,7 +81,6 @@
         <!--column 2-->
         <android.support.v7.widget.CardView
             android:id="@+id/doc_card"
-            android:clickable="true"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_columnWeight="1"
@@ -85,6 +88,8 @@
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
             android:layout_rowWeight="1"
+            android:clickable="true"
+            app:cardBackgroundColor="#77BBAA"
             app:cardCornerRadius="8dp"
             app:cardElevation="8dp">
 
@@ -106,7 +111,7 @@
                     android:layout_height="wrap_content"
                     android:text="DTS"
                     android:textAlignment="center"
-                    android:textColor="#A0D468"
+                    android:textColor="#363636"
                     android:textSize="18sp"
                     android:textStyle="bold" />
 
@@ -116,7 +121,6 @@
         <!--column 3-->
         <android.support.v7.widget.CardView
             android:id="@+id/exam_card"
-            android:clickable="true"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_columnWeight="1"
@@ -124,6 +128,8 @@
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
             android:layout_rowWeight="1"
+            android:clickable="true"
+            app:cardBackgroundColor="#99AAEE"
             app:cardCornerRadius="8dp"
             app:cardElevation="8dp">
 
@@ -145,7 +151,7 @@
                     android:layout_height="wrap_content"
                     android:text="EXS"
                     android:textAlignment="center"
-                    android:textColor="#FC6E51"
+                    android:textColor="#363636"
                     android:textSize="18sp"
                     android:textStyle="bold" />
 
@@ -157,7 +163,6 @@
         <!--column 1-->
         <android.support.v7.widget.CardView
             android:id="@+id/eval_card"
-            android:clickable="true"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_columnWeight="1"
@@ -165,6 +170,8 @@
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
             android:layout_rowWeight="1"
+            android:clickable="true"
+            app:cardBackgroundColor="#DDEE77"
             app:cardCornerRadius="8dp"
             app:cardElevation="8dp">
 
@@ -186,7 +193,7 @@
                     android:layout_height="wrap_content"
                     android:text="EVA"
                     android:textAlignment="center"
-                    android:textColor="#509CEC"
+                    android:textColor="#363636"
                     android:textSize="18sp"
                     android:textStyle="bold" />
 
@@ -196,7 +203,6 @@
         <!--column 2-->
         <android.support.v7.widget.CardView
             android:id="@+id/rent_card"
-            android:clickable="true"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_columnWeight="1"
@@ -204,6 +210,8 @@
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
             android:layout_rowWeight="1"
+            android:clickable="true"
+            app:cardBackgroundColor="#3366AA"
             app:cardCornerRadius="8dp"
             app:cardElevation="8dp">
 
@@ -225,7 +233,7 @@
                     android:layout_height="wrap_content"
                     android:text="NFR"
                     android:textAlignment="center"
-                    android:textColor="#967ADC"
+                    android:textColor="#363636"
                     android:textSize="18sp"
                     android:textStyle="bold" />
 
@@ -235,7 +243,6 @@
         <!--column 3-->
         <android.support.v7.widget.CardView
             android:id="@+id/train_card"
-            android:clickable="true"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_columnWeight="1"
@@ -243,6 +250,8 @@
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
             android:layout_rowWeight="1"
+            android:clickable="true"
+            app:cardBackgroundColor="#BB7799"
             app:cardCornerRadius="8dp"
             app:cardElevation="8dp">
 
@@ -265,7 +274,7 @@
                     android:layout_height="wrap_content"
                     android:text="TNS"
                     android:textAlignment="center"
-                    android:textColor="#37BC9B"
+                    android:textColor="#363636"
                     android:textSize="18sp"
                     android:textStyle="bold" />
 
@@ -276,7 +285,6 @@
         <!--column 1-->
         <android.support.v7.widget.CardView
             android:id="@+id/copt_card"
-            android:clickable="true"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_columnWeight="1"
@@ -284,6 +292,8 @@
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
             android:layout_rowWeight="1"
+            android:clickable="true"
+            app:cardBackgroundColor="#FF9966"
             app:cardCornerRadius="8dp"
             app:cardElevation="8dp">
 
@@ -305,7 +315,7 @@
                     android:layout_height="wrap_content"
                     android:text="CoPT"
                     android:textAlignment="center"
-                    android:textColor="#FFDAB9"
+                    android:textColor="#363636"
                     android:textSize="18sp"
                     android:textStyle="bold" />
 
@@ -315,7 +325,6 @@
         <!--column 2-->
         <android.support.v7.widget.CardView
             android:id="@+id/booking_card"
-            android:clickable="true"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_columnWeight="1"
@@ -323,6 +332,8 @@
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
             android:layout_rowWeight="1"
+            android:clickable="true"
+            app:cardBackgroundColor="#CC99FF"
             app:cardCornerRadius="8dp"
             app:cardElevation="8dp">
 
@@ -344,7 +355,7 @@
                     android:layout_height="wrap_content"
                     android:text="NFRL"
                     android:textAlignment="center"
-                    android:textColor="#CD5C5C"
+                    android:textColor="#363636"
                     android:textSize="18sp"
                     android:textStyle="bold" />
 
@@ -354,7 +365,6 @@
         <!--column 3-->
         <android.support.v7.widget.CardView
             android:id="@+id/nlot_card"
-            android:clickable="true"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_columnWeight="1"
@@ -362,6 +372,8 @@
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
             android:layout_rowWeight="1"
+            android:clickable="true"
+            app:cardBackgroundColor="#7CCD7C"
             app:cardCornerRadius="8dp"
             app:cardElevation="8dp">
 
@@ -384,7 +396,7 @@
                     android:layout_height="wrap_content"
                     android:text="BKR"
                     android:textAlignment="center"
-                    android:textColor="#FFFF00"
+                    android:textColor="#363636"
                     android:textSize="18sp"
                     android:textStyle="bold" />
 

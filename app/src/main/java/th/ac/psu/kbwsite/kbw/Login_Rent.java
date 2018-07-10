@@ -26,6 +26,7 @@ public class Login_Rent extends AppCompatActivity {
                 if(user.getText().toString().equals("admin")&&pass.getText().toString().equals("1234")){
                     Intent serve = new Intent(Login_Rent.this, Menu_Rent.class);
                     startActivity(serve);
+                    finish();
                 }else {
                     Toast.makeText(getApplicationContext(),"รหัสผ่านไม่ถูกต้อง",Toast.LENGTH_LONG).show();
                 }

@@ -8,7 +8,17 @@
     android:padding="16dp"
     android:background="#F5F5F5"
     tools:context=".Show_All">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="รายละเอียด"
+        android:textColor="#ff8080"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:background="#f06050"/>
     <LinearLayout
+        android:layout_marginTop="10dp"
         android:background="@drawable/back_showdetail"
         android:weightSum="2"
         android:orientation="horizontal"
@@ -75,7 +85,7 @@
                 android:textSize="20dp"
                 android:textStyle="bold"
                 android:text="ผลการสอบ"/> <!-- 7 -->
-        </LinearLayout>
+        </LinearLayout><!-- Header-->
         <View
             android:layout_width="3dp"
             android:layout_height="match_parent"
@@ -141,12 +151,13 @@
                 android:textSize="20dp"
                 android:textStyle="normal"
                 android:text="ผลการสอบ"/> <!-- 7 -->
-        </LinearLayout>
+        </LinearLayout> <!-- Output-->
     </LinearLayout>
 
     <Button
-        android:layout_width="match_parent"
+        android:layout_width="160dp"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="190dp"
         android:text="BACK"
         android:layout_marginTop="10dp"
         android:id="@+id/back"

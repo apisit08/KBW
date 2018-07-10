@@ -47,7 +47,7 @@ public class Control_Main extends AppCompatActivity implements AdapterView.OnIte
         Intent intent = new Intent(Control_Main.this, Show_All.class);
         intent.putExtra("data",item);
         startActivity(intent);
-        finish();
+        //finish();
     }
 
     private class SimpleTask extends AsyncTask<String, Void, String> {
