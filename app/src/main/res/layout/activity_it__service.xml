@@ -102,6 +102,7 @@
             android:textSize="18dp"
             android:textColor="#ffffff"
             android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
             android:background="@color/colorPrimaryDark"/> <!-- From-->
 
         <TextView
@@ -112,18 +113,19 @@
             android:textSize="18dp"
             android:textColor="#ffffff"
             android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
             android:background="@color/colorPrimaryDark"/> <!-- Status-->
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="vertical">
             <Button
                 android:id="@+id/bt_back"
                 style="@style/Base.TextAppearance.AppCompat.Body1"
-                android:layout_width="150dp"
-                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
                 android:background="@drawable/backback"
@@ -134,10 +136,10 @@
             <Button
             android:id="@+id/bt_admin"
             style="@style/Base.TextAppearance.AppCompat.Body1"
-            android:layout_width="150dp"
-            android:layout_marginLeft="25dp"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="30dp"
             android:background="@drawable/backlogin"
             android:clickable="true"
             android:text="ADMIN"

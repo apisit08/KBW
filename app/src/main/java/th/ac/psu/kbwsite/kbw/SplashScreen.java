@@ -38,12 +38,12 @@ public class SplashScreen extends AppCompatActivity {
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 switch (item.getItemId()) {
                     case R.id.nav_home:
-                        mMainNav.setItemBackgroundResource(R.color.colorPrimary);
+                        mMainNav.setItemBackgroundResource(R.color.colorGrapeFruitDark);
                         setFragment (homeFragment);
                         return true;
 
-                    case R.id.nav_student:
-                        mMainNav.setItemBackgroundResource(R.color.colorAccent);
+                    case R.id.nav_staff:
+                        mMainNav.setItemBackgroundResource(R.color.colorGrapeFruitDark);
                         setFragment(studentFragment);
                         return true;
 

@@ -6,10 +6,13 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="10dp"
+    android:background="#FFF0F5"
     tools:context=".Show_All_Menu">
 
     <Button
         android:layout_marginTop="220dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/bt_old"
@@ -17,9 +20,11 @@
         android:text="PSU-CoPTEST (ระบบเก่า)"
         android:background="@drawable/back_showdetail"/>
     <Button
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="30dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
         android:id="@+id/bt_new"
         android:textSize="20dp"
         android:text="PSU-CoPTEST (ระบบใหม่)"

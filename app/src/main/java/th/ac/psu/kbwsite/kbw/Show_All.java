@@ -9,6 +9,10 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -24,6 +28,13 @@ public class Show_All extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_show__all);
 
+        TextView textData1 = (TextView)findViewById(R.id.data1);
+        TextView textData2 = (TextView)findViewById(R.id.data2);
+        TextView textData3 = (TextView)findViewById(R.id.data3);
+        TextView textData4 = (TextView)findViewById(R.id.data4);
+        TextView textData5 = (TextView)findViewById(R.id.data5);
+        TextView textData6 = (TextView)findViewById(R.id.data6);
+        TextView textData7 = (TextView)findViewById(R.id.data7);
         Button bt = (Button)findViewById(R.id.back);
         bt.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -36,20 +47,13 @@ public class Show_All extends AppCompatActivity {
 
         Bundle bundle = getIntent().getExtras();
         if (bundle != null) {
-            String obj = bundle.getString("data");
-            /*int star = bundle.getInt("star");
-            boolean isSmart = bundle.getBoolean("smart");*/
-            //String result = String.format("Name is %s",name);
-            //Toast.makeText(this, "Name : " + result, Toast.LENGTH_SHORT).show();
-            String result = "";
 
-            TextView textData1 = (TextView)findViewById(R.id.data1);
-            TextView textData2 = (TextView)findViewById(R.id.data2);
-            TextView textData3 = (TextView)findViewById(R.id.data3);
-            TextView textData4 = (TextView)findViewById(R.id.data4);
-            TextView textData5 = (TextView)findViewById(R.id.data5);
-            TextView textData6 = (TextView)findViewById(R.id.data6);
-            TextView textData7 = (TextView)findViewById(R.id.data7);
+            String obj = bundle.getString("data");
+            //int star = bundle.getInt("star");
+            //boolean isSmart = bundle.getBoolean("smart");
+
+
+            String result = "";
 
             String[] arr = obj.split(",");
 
@@ -86,6 +90,7 @@ public class Show_All extends AppCompatActivity {
             textData5.setText(r5);
             textData6.setText(r6);
             textData7.setText(r7);
+
 
         }
 

@@ -23,7 +23,7 @@
                                           <PersistentState>
                                             <option name="values">
                                               <map>
-                                                <entry key="scalingPercent" value="64" />
+                                                <entry key="scalingPercent" value="66" />
                                               </map>
                                             </option>
                                           </PersistentState>
@@ -33,7 +33,7 @@
                                   </option>
                                   <option name="values">
                                     <map>
-                                      <entry key="foregroundImage" value="D:\Android_project\KBW\ll.png" />
+                                      <entry key="foregroundImage" value="D:\Android_project\KBW\gg.png" />
                                     </map>
                                   </option>
                                 </PersistentState>
